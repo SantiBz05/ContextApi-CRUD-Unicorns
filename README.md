@@ -1,16 +1,19 @@
 # 🦄 Unicorn CRUD con React + PrimeReact
 
-## 📋 Descripción del Proyecto
-Este es un proyecto CRUD (Create, Read, Update, Delete) de Unicornios hecho con React, PrimeReact y Vite. Permite la gestión completa de un listado de unicornios, utilizando una API externa de tipo REST para almacenamiento temporal.
+## 📝 Descripción del Proyecto
+
+Este proyecto es una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar una lista de unicornios. Está desarrollada utilizando React, PrimeReact y Vite, y se conecta a una API REST externa proporcionada por [crudcrud.com](https://crudcrud.com/) para el almacenamiento temporal de datos.
 
 ## 🚀 Tecnologías Utilizadas
+
 - ⚛️ React + Vite
 - 🎨 PrimeReact
-- 🌍 React Router DOM
-- 🌐 API externa: [crudcrud.com](https://crudcrud.com)
-- 🧠 Hooks: `useState`, `useEffect`
+- 🧭 React Router DOM
+- 🌐 API externa: [crudcrud.com](https://crudcrud.com/)
+- 🪝 Hooks de React: `useState`, `useEffect`
 
-## 🧩 Estructura del Unicornio
+## 🦄 Estructura del Objeto Unicornio
+
 ```json
 {
   "name": "Twilight Sparkle",
@@ -23,62 +26,77 @@ Este es un proyecto CRUD (Create, Read, Update, Delete) de Unicornios hecho con 
 ```
 
 ## 📁 Estructura del Proyecto
+
 ```
 src/
 └── unicorns/
     ├── index.jsx              # Exporta UnicornsContainer
-    ├── UnicornsContainer.jsx # Contiene la lógica del CRUD
-    └── UnicornsView.jsx       # Vista, inputs, tabla, botones
+    ├── UnicornsContainer.jsx  # Contiene la lógica del CRUD
+    └── UnicornsView.jsx       # Vista: inputs, tabla, botones
 ```
 
-## 🔄 Funcionalidad CRUD
-- **Create**: Agrega unicornios con un formulario.
-- **Read**: Muestra los unicornios en una tabla.
-- **Update**: Permite editar unicornios seleccionados.
-- **Delete**: Elimina unicornios seleccionados.
+## ⚙️ Funcionalidades CRUD
+
+- **Create**: Agrega nuevos unicornios mediante un formulario.
+- **Read**: Muestra la lista de unicornios en una tabla.
+- **Update**: Permite editar los detalles de un unicornio seleccionado.
+- **Delete**: Elimina unicornios seleccionados de la lista.
 
 ## 🧭 Navegación con Rutas
-Usamos `react-router-dom` para manejar rutas:
-- `/unicornios` → Vista principal del módulo.
 
-## ⚙️ Requisitos Técnicos
-- Uso de `useEffect` para obtener datos de la API al montar el componente.
-- Manejo de estado con `useState`.
-- Comunicación entre componentes mediante props.
-- Código modular, limpio y documentado.
+La aplicación utiliza `react-router-dom` para manejar las rutas:
 
-## 💅 Estilo y UX
-- Tema oscuro personalizado para mejor visualización.
-- Uso de componentes accesibles y responsivos con PrimeReact.
+- `/unicornios` → Vista principal del módulo de unicornios.
 
-## 🐞 Manejo de Errores
-- Control de errores en fetch: try-catch / .catch()
-- Validaciones básicas en formularios
+## 🛠️ Instalación y Ejecución
 
-## 🧪 Cómo Ejecutarlo
-1. Clona el repositorio:
-```bash
-git clone https://github.com/tu_usuario/tu_repo.git
-cd tu_repo
-```
-2. Instala dependencias:
-```bash
-npm install
-```
-3. Ejecuta el proyecto:
-```bash
-npm run dev
-```
-4. Asegúrate de tener un endpoint único de `crudcrud.com` y reemplazarlo en `UnicornsContainer.jsx`
----
+Sigue estos pasos para instalar y ejecutar el proyecto localmente:
 
-## ✨ Extras (Puntos Opcionales)
-- Navegación entre rutas
-- Validaciones de formularios
-- Estilo visual mejorado
-- Manejo de errores de la API
+1. **Clona el repositorio:**
 
----
+   ```bash
+   git clone https://github.com/SantiBz05/ContextApi-CRUD-Unicorns.git
+   ```
 
-¡Buena suerte y que la magia de los unicornios los acompañe! 🦄
+2. **Accede al directorio del proyecto:**
 
+   ```bash
+   cd ContextApi-CRUD-Unicorns
+   ```
+
+3. **Instala las dependencias:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Obtén tu API Key de crudcrud.com:**
+
+   - Visita [crudcrud.com](https://crudcrud.com/) y copia la URL de tu API personal.
+   - Reemplaza la URL en el archivo correspondiente del proyecto (por ejemplo, en `UnicornsContainer.jsx`) con tu nueva API Key.
+
+5. **Inicia el servidor de desarrollo:**
+
+   ```bash
+   npm run dev
+   ```
+
+   La aplicación estará disponible en `http://localhost:5173`.
+
+## 📸 Capturas de Pantalla
+
+> _Aquí puedes agregar imágenes o capturas de pantalla de la aplicación para ilustrar su funcionamiento._
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/tu-feature`).
+3. Realiza tus cambios y haz commits (`git commit -m 'Agrega nueva funcionalidad'`).
+4. Sube tus cambios (`git push origin feature/tu-feature`).
+5. Abre un Pull Request.
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
