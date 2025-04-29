@@ -25,16 +25,6 @@ Este proyecto es una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) para g
 }
 ```
 
-## 📁 Estructura del Proyecto
-
-```
-src/
-└── unicorns/
-    ├── index.jsx              # Exporta UnicornsContainer
-    ├── UnicornsContainer.jsx  # Contiene la lógica del CRUD
-    └── UnicornsView.jsx       # Vista: inputs, tabla, botones
-```
-
 ## ⚙️ Funcionalidades CRUD
 
 - **Create**: Agrega nuevos unicornios mediante un formulario.
@@ -83,20 +73,4 @@ Sigue estos pasos para instalar y ejecutar el proyecto localmente:
 
    La aplicación estará disponible en `http://localhost:5173`.
 
-## 📸 Capturas de Pantalla
 
-> _Aquí puedes agregar imágenes o capturas de pantalla de la aplicación para ilustrar su funcionamiento._
-
-## 🤝 Contribuciones
-
-¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, por favor sigue estos pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/tu-feature`).
-3. Realiza tus cambios y haz commits (`git commit -m 'Agrega nueva funcionalidad'`).
-4. Sube tus cambios (`git push origin feature/tu-feature`).
-5. Abre un Pull Request.
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
